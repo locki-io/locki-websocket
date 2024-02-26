@@ -1,0 +1,11 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "LockiWebsocket"
+resolve_s3 = true
+s3_prefix = "LockiWebsocket"
+region = "eu-central-1"
+profile = "lockidev"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "TableName=\"locki-socket-connection-history\""
+image_repositories = []
